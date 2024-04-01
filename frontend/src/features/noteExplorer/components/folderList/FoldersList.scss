@@ -1,0 +1,127 @@
+$background-grey: #f8f8f9;
+$background-white: #ffffff;
+$background-light: #eeeeef;
+$primary-color: #292d32;
+$second-color: #dfdfe0;
+$third-color: #4d5259;
+$second-text: #85898b;
+
+.files-and-folder{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: 'Roboto-Medium';
+    &--header{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+        border-radius: 0.3rem;
+        font-size: 1rem;
+        transition: 0.3s;
+        .content-block{
+            align-items: center;
+            display: flex;
+            margin-left: 0.5rem;
+            span{
+                margin-left: 0.4rem;
+            }
+            svg{
+                font-size: 1.1rem;
+            }
+        }
+        .btn-add-folder{
+            font-size: 1.4rem;
+            margin-right: 0.5rem;
+            margin-top: 0.4rem;
+            cursor: pointer;
+        }
+    }
+    &--items-list{
+        width: 100%;
+        color: $second-text;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            transition: 0.2s;
+            .folder{
+                cursor: pointer;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 1rem;
+                width: 100%;
+                text-align: left;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                box-sizing: border-box;
+                .content-block{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 0.5rem;
+                    span{
+                        margin-left: 0.4rem;
+                    }
+                    svg{
+                        font-size: 1.1rem;
+                        transition: 0.5s;
+                    }
+                }
+                .options{
+                    display: flex;
+                    align-items: center;
+                    opacity: 0; 
+                    transition: 0.2s;
+                    .btn-options{
+                        display: flex;
+                        align-items: center;
+                        padding: 0.2rem;
+                        border-radius: 0.5rem;
+                        &:hover{
+                            color: $background-white;
+                            background-color: $third-color;
+                        }
+                    }
+                    
+                }
+                &:hover{
+                    background-color: $background-light;
+                    color: $primary-color;
+                }
+                &:hover .options{
+                    opacity: 1;                
+                } 
+            }
+            .folder-sub{
+                cursor: pointer;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 1rem;
+                text-align: left;
+                padding: 0.2rem; 
+                margin-left: 2.3rem;
+                color: $second-text;
+                .file{
+                    margin-bottom: 0.8rem;
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        margin-right: 0.5rem;
+                    }
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rotated {
+    /* Styles du chevron tourné */
+    transform: rotate(90deg);
+}

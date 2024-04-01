@@ -1,0 +1,74 @@
+$background-grey: #f8f8f9;
+$background-white: #ffffff;
+$primary-color: #292d32;
+$second-color: #dfdfe0;
+$third-color: #4d5259;
+
+
+.notes-explorer{
+    flex: 0 0 230px;
+    height: 100vh;
+    background: $background-grey;
+    padding: 1rem 1.5rem;
+    box-sizing: content-box;
+    color: $primary-color;
+    &--header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__title{
+            display: flex;
+            font-weight: 600;
+            font-size: 1.6rem;
+            align-items: center;
+            img{
+                width: 50px;
+            }
+        }
+    }
+    &--options{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $second-color;
+        &__item{
+            font-family: 'Roboto-Medium';
+            width: 100%;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.6rem;
+            font-size: 1rem;
+            transition: 0.3s;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            .content-block{
+                align-items: center;
+                display: flex;
+                margin-left: 0.5rem;
+                span{
+                    margin-left: 0.4rem;
+                }
+                svg{
+                    font-size: 1.2rem;
+                }
+            }
+            .shortcut{
+                background-color: $second-color;
+                padding: 0.2rem 0.4rem;
+                border-radius: 4px;
+                font-size: 0.8rem;
+                margin-right: 0.5rem;
+            }
+            &:hover{
+                background-color: $primary-color;
+                color: $background-white;
+                .shortcut{
+                    background-color: $third-color;
+                }
+            }
+        }
+    }
+}

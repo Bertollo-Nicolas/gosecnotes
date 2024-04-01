@@ -1,0 +1,35 @@
+$background-grey: #f8f8f9;
+$background-white: #ffffff;
+$background-light: #eeeeef;
+$primary-color: #292d32;
+$second-color: #dfdfe0;
+$third-color: #4d5259;
+$second-text: #85898b;
+
+.context-menu{
+    width: 170px;
+    background-color: $background-grey;
+    box-shadow: 0px 0px 10px 2px rgb(220, 220, 220);
+    text-align: left;
+    border-radius: 0.3rem;
+    ul{
+        padding: 0.5rem;
+        li{
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+            padding: 0.2rem 0.5rem;
+            display: flex;
+            align-items: center;
+            border-radius: 0.3rem;
+            svg{
+                margin-right: 0.7rem;
+            }
+            &:hover{
+                background-color: $background-light;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

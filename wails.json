@@ -1,0 +1,13 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "gosecnotes",
+  "outputfilename": "gosecnotes",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Bertollo-Nicolas",
+    "email": "118696143+Bertollo-Nicolas@users.noreply.github.com"
+  }
+}
